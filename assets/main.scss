@@ -341,7 +341,10 @@ main{
 
 .pagination{
 	display: block;
+	margin-top: 1rem;
 	width: 100%;
+	box-sizing: border-box;
+	padding-left: 1%;
 }
 
 ul.pages{
