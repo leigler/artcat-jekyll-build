@@ -1,4 +1,7 @@
 {% include header.html %}
 	{% include exhibitioncolumn.html content="current" title="Current Exhibitions" %}
 	{% include exhibitioncolumn.html content="upcoming" title="Upcoming Exhibitions" %}
+	
+	<!-- The pagination _include will need to be converted to cycle through either individual pages or a collection, depending on your set-up -->
+	{% include pagination.html content="archive" title="Archived Exhibitions" %}
 {% include footer.html %}

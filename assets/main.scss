@@ -337,6 +337,35 @@ main{
 }
 
 
+/*************** PAGINATION ****************/
+
+.pagination{
+	display: block;
+	width: 100%;
+}
+
+ul.pages{
+	list-style: none;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	cursor: default;
+}
+
+.page{
+	display: inline-block;
+	margin-right: 0.5rem;
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+	border: solid 1px transparent;
+	border-radius: 1rem;
+	cursor: pointer;
+
+	&.active-page, &:hover{
+		border: solid 1px black;
+	}
+}
+
+
 /*************** LIGHTBOX ****************/
 
 .lightbox{
@@ -638,6 +667,14 @@ a.exhibition, a.exhibition:hover{
 .column > .image-set > p{
 	margin-top: 0px;
 	font-size: 0.75rem;
+}
+
+.column.full-width > .image-set.paginate{
+	text-decoration: none;
+}
+
+.column.full-width > .image-set.paginate > p{
+	font-size: 1rem;
 }
 
 @media all and (max-width: 768px){

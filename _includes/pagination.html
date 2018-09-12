@@ -1,0 +1,24 @@
+<div class="column full-width">
+
+	{% if include.title %}
+		<h2>{{ include.title }}</h2>
+	{% endif %}
+	{% for item in page[include.content] %}	
+		<a class="image-set grid-item paginate" href="{{ item.url }}">
+			<img src="{{ item.image }}">
+			<h3>{{ item.title }}</h3>
+			<h4>{{ item.date }}</h4>
+			<p>{{ item.description }}</p>
+		</a>
+	{% endfor %}
+	
+	<div class="pagination">
+		<ul class="pages">
+			<li class="page active-page">1</li>
+			<li class="page">2</li>
+			<li class="page">3</li>
+			<li class="page">4</li>
+		</ul>
+	</div>
+
+</div>

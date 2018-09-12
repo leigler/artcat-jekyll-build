@@ -1,0 +1,5 @@
+plugins: 
+  - jekyll-paginate
+
+paginate: 12
+paginate_path: "/exhibits/exhibit:num/"

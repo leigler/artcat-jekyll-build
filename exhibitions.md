@@ -20,6 +20,15 @@ upcoming : [
 						url : "/"
 					}
 					]
+archive: [
+					{
+						title: "Exhibition Title",
+						description: "a short description",
+						image: "assets/images/image-3.jpg",
+						date: "August 20",
+						url: "/"
+					}
+					]
 
 ---
 
