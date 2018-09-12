@@ -1,0 +1,16 @@
+<div class="column">
+
+	<h1>{{ include.title }}</h1>
+	
+	{% for exhibit in page[include.content] %}	
+		<a href="{{ exhibit.url }}" class="exhibition">
+			<img src="{{ exhibit.image }}" class="exhibit-thumbnail">
+			<div class="exhibit-info">
+				<h3>{{ exhibit.title }}</h3>
+				<p>{{ exhibit.description  }}</p>
+				<p>{{ exhibit.date  }}</p>
+			</div>
+		</a>
+	{% endfor %}
+
+</div>

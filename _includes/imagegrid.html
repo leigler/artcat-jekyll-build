@@ -1,0 +1,13 @@
+<div class="column full-width">
+
+	{% if include.title != blank %}
+		<h2>{{ include.title }}</h2>
+	{% endif %}
+
+	{% for item in page[include.content] %}	
+		<div class="image-set grid-item">
+			<img src="{{ item.image }}">
+			<p>{{ item.description }}</p>
+		</div>
+	{% endfor %}
+</div>

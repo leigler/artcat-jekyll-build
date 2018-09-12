@@ -282,7 +282,7 @@ main{
 
 .image-set{
 	display: inline-block;
-	width: 18%;
+	width: 14.66%;
 	margin: 1%;
 	vertical-align: top;
 }
@@ -552,6 +552,7 @@ a.exhibition, a.exhibition:hover{
 	box-sizing: border-box;
 	padding-right: 0.75rem;
 	margin-bottom: 1rem;
+	text-decoration: none;
 }
 
 .image-list-item > h2, .image-list-item > h3, .image-list-item > h4{
@@ -565,6 +566,7 @@ a.exhibition, a.exhibition:hover{
 	margin-bottom: 0.1rem;
 }
 
+
 .column > .image-set{
 	display: inline-block;
 	width: 48%;
@@ -573,6 +575,14 @@ a.exhibition, a.exhibition:hover{
 	margin-top: 1%;
 	vertical-align: top;
 }
+
+.column.full-width > .image-set{
+	display: inline-block;
+	width: 14.66%;
+	margin: 1%;
+	vertical-align: top;
+}
+
 
 .column > .image-set > img{
 	width: 100%;
@@ -589,6 +599,10 @@ a.exhibition, a.exhibition:hover{
 	.column{
 		width: 100%;
 		padding-right: 0;
+	}
+
+	.column.full-width > .image-set{
+		width: 31.33%;
 	}
 
 	.image-list-item{

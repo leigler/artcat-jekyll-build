@@ -1,0 +1,12 @@
+<div class="column">
+	{% if include.title != blank %}
+		<h2>{{ include.title }}</h2>
+	{% endif %}
+
+	{% for image in page.images %}
+		<div class="image-set">
+			<img src="{{ image[0] }}">
+			<p>{{ image[1] }}</p>
+		</div>
+	{% endfor %}
+</div>

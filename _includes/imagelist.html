@@ -1,0 +1,14 @@
+<div class="column">
+	{% if include.title != blank %}
+		<h2>{{ include.title }}</h2>
+	{% endif %}
+	
+	{% for item in page[include.content] %}	
+		<a href="{{ item.url }}" class="image-list-item">
+			<h3>{{ item.title }}</h3>
+			<img src="{{ item.image }}">
+			<h4>{{ item.subtitle }}</h4>
+			<p>{{ item.description }}</p>
+		</a>
+	{% endfor %}
+</div>
