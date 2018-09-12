@@ -1,0 +1,6 @@
+---
+
+layout: password
+title: Passwords
+
+---

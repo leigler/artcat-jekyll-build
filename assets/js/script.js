@@ -71,6 +71,26 @@ Site.lightbox = function(){
 			updateDirections(index)
 		})
 
+
+		$(document).keydown(function(e){
+		    var target;
+		    if (e.keyCode == 37) { 
+		       //left (previous)
+		      target = $(".direction.prev").attr("data-target")
+		    }else if(e.keyCode == 39){
+		    	//right (next)
+		    	target = $(".direction.next").attr("data-target")
+		    }
+		    
+		    var	index = $.inArray(target, imageArray)
+				// update image
+				$(".current-image").attr("src", target)
+				// update caption
+				$(".lightbox-caption").text(captionArray[index])
+				// update direction controls
+				updateDirections(index)
+		});
+
 		var exit = function(){
 			$(".lightbox").removeClass("open")
 		}
