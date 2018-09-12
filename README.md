@@ -9,6 +9,9 @@
 - image grid
 - image list
 - images
+- exhibitioncolumn
+- pagination
+- passwordfield
 
 ### Includes, utilites:
 
