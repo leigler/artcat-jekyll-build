@@ -603,6 +603,12 @@ a.exhibition, a.exhibition:hover{
 .column.full-width{
 	display: block;
 	width: 100%;
+
+	img.full-width-image{
+		width: 100%;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
 }
 
 .column > h1, .column > h2, .column > h3, .column > h4, .column > p{
